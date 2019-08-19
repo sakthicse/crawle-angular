@@ -7,7 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
-// import { NgHttpLoaderModule } from 'ng-http-loader';
+import { NgHttpLoaderModule } from 'ng-http-loader';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CrawleComponent } from './crawle/crawle.component';
 @NgModule({
@@ -24,7 +24,7 @@ import { CrawleComponent } from './crawle/crawle.component';
     HttpModule,
     FormsModule,
     ReactiveFormsModule,
-    // NgHttpLoaderModule,
+    NgHttpLoaderModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
