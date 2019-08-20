@@ -15,10 +15,10 @@
                           </div>
 
                           <div class="input-group mb-3">
-                          <input type="text" class="form-control col" name="level" formControlName="level" placeholder="Level">
+                          <input type="number" class="form-control col" name="level" formControlName="level" placeholder="Level">
             <div *ngIf="formErrors.level" class="alert alert-danger">{{formErrors.level}}</div>
             </div>
-                      <button class="btn btn-block btn-success" [disabled]="!crawleForm.valid">Crawler</button>
+                      <button class="btn btn-block btn-success" [disabled]="!crawleForm.valid ">Crawler</button>
                     </form>
                   </div>
                  

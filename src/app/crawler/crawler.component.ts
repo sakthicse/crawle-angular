@@ -14,14 +14,19 @@ export class CrawlerComponent implements OnInit {
   hrefs:any=[];
   images:any=[];
   constructor(private auth:AuthService,public cs:CrawlerService) {
+    const reg = '(https?://)?([\\da-z.-]+)\\.([a-z.]{2,6})[/\\w .-]*/?';
+
     this.crawleForm = new FormGroup({
-      url: new FormControl('', [Validators.required]),
-      level:new FormControl('',[Validators.required]),
+      url: new FormControl('', [Validators.required, Validators.pattern(reg)]),
+      level:new FormControl('',[Validators.required, Validators.min(1), Validators.max(3)]),
       });
    }
 
   ngOnInit() {
   }
+
+
+
   /** 
    mothod to post crawler
   **/
