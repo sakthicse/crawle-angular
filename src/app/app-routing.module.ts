@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
-import { CrawleComponent } from './crawle/crawle.component';
+import { CrawlerComponent } from './crawler/crawler.component';
 
 const routes: Routes = [
  	 {
@@ -18,8 +18,8 @@ const routes: Routes = [
         component: HomeComponent
     },
     {
-      path: 'crawle',
-      component:CrawleComponent
+      path: 'crawler',
+      component:CrawlerComponent
     }
       ];
 

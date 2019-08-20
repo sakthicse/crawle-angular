@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { CrawleService } from './crawle.service';
+import { CrawlerService } from './crawler.service';
 
-describe('CrawleService', () => {
+describe('CrawlerService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: CrawleService = TestBed.get(CrawleService);
+    const service: CrawlerService = TestBed.get(CrawlerService);
     expect(service).toBeTruthy();
   });
 });

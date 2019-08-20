@@ -4,7 +4,7 @@ import { HttpClientCustomService } from '../http-client-custom/http-client-custo
 @Injectable({
   providedIn: 'root'
 })
-export class CrawleService {
+export class CrawlerService {
 
   private baseUrl = environment.apiBase;
   itemPerPage: number = 10;

@@ -1,19 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { AuthService } from '../services/auth/auth.service';
-import { CrawleService } from '../services/crawle/crawle.service';
+import { CrawlerService } from '../services/crawler/crawler.service';
 @Component({
-  selector: 'app-crawle',
-  templateUrl: './crawle.component.html',
-  styleUrls: ['./crawle.component.css']
+  selector: 'app-crawler',
+  templateUrl: './crawler.component.html',
+  styleUrls: ['./crawler.component.css']
 })
-export class CrawleComponent implements OnInit {
+export class CrawlerComponent implements OnInit {
 
   crawleForm: FormGroup;
   formErrors:any=[];
   hrefs:any=[];
   images:any=[];
-  constructor(private auth:AuthService,public cs:CrawleService) {
+  constructor(private auth:AuthService,public cs:CrawlerService) {
     this.crawleForm = new FormGroup({
       url: new FormControl('', [Validators.required]),
       level:new FormControl('',[Validators.required]),
@@ -22,8 +22,11 @@ export class CrawleComponent implements OnInit {
 
   ngOnInit() {
   }
-  postCrawlet(){
-    this.cs.post(this.crawleForm.value,'/crawle-site/crawle/').subscribe((data)=>{
+  /** 
+   mothod to post crawler
+  **/
+  postCrawler(){
+    this.cs.post(this.crawleForm.value,'/crawler-site/crawler/').subscribe((data)=>{
       if(data.hasOwnProperty('href_links')){
         this.hrefs =  data['href_links'];
       }

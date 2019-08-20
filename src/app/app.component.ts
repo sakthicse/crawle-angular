@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 export class AppComponent {
   currentAuth:any;
   currentUser:any;
-  title = 'crawle-angular';
+  title = 'crawler-angular';
   constructor(private auth:AuthService, private router: Router) {
     this.currentAuth = this.auth.token();
   //   if(!this.currentAuth){

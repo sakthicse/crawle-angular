@@ -9,13 +9,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 import { NgHttpLoaderModule } from 'ng-http-loader';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { CrawleComponent } from './crawle/crawle.component';
+import { CrawlerComponent } from './crawler/crawler.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
-    CrawleComponent
+    CrawlerComponent
   ],
   imports: [
     BrowserModule,

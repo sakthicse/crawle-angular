@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CrawleComponent } from './crawle.component';
+import { CrawlerComponent } from './crawler.component';
 
-describe('CrawleComponent', () => {
-  let component: CrawleComponent;
-  let fixture: ComponentFixture<CrawleComponent>;
+describe('CrawlerComponent', () => {
+  let component: CrawlerComponent;
+  let fixture: ComponentFixture<CrawlerComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CrawleComponent ]
+      declarations: [ CrawlerComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CrawleComponent);
+    fixture = TestBed.createComponent(CrawlerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
